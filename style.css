@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "FigTree", sans-serif;
+  }
+  
+  main {
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    background-image: url(duddle.jpg);
+    background-repeat: repeat;
+    /* filter: blur(1); */
+    padding-top: 0.1px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .container {
+    height: 500px;
+    width: 650px;
+    border: 1px solid black;
+    margin: 30px auto 0; /* (t, r, b, l) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    border-radius: 36px;
+  }
+  
+  .card {
+    height: 80%;
+    width: 30%;
+    background: black;
+    border-radius: 12px;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+  }
+  
+  .card:nth-child(1) {
+    background-image: url(one.jpg);
+    background-size: cover;
+    }
+
+  .card:nth-child(1):hover{
+    background-image: url(one.jpg);
+    transform: scale(1.1);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    border-radius: 30px;
+  }
+  .card:nth-child(2) {
+    background-image: url(four.webp);
+    background-size: cover;
+    transform: scale(1.1);
+  }
+  .card:nth-child(2):hover{
+    background-image: url(four.webp);
+    transform: scale(1.1);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    border-radius: 30px;
+  }
+  
+  .card:nth-child(3) {
+    background-image: url(three.avif);
+    background-size: cover;
+    transform: scale(1.1);  
+}
+.card:nth-child(3):hover{
+    background-image: url(three.avif);
+    transform: scale(1.1);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    border-radius: 30px;
+  }
+  .card:nth-child(4) {
+    background-image: url(five.jpg);
+    background-size: cover;
+    transform: scale(1.1);  
+}
+.card:nth-child(4):hover{
+    background-image: url(five.jpg);
+    transform: scale(1.1);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    border-radius: 30px;
+  }
+  .card:nth-child(5) {
+    background-image: url(last.webp);
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);  
+}
+.card:nth-child(5):hover{
+    background-image: url(last.webp);
+    transform: scale(1.1);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    align-items: center;
+    border-radius: 30px;
+  }
+  .card:nth-child(6) {
+    background-image: url(abc.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);  
+}
+.card:nth-child(6):hover{
+    background-image: url(abc.jpg);
+    transform: scale(1.1);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    align-items: center;
+    border-radius: 30px;
+  }
+
+  .card:nth-child(1),
+  .card:nth-child(2),
+  .card:nth-child(3),
+  .card:nth-child(4),
+  .card:nth-child(5),
+  .card:nth-child(6) {
+    cursor: pointer;
+    transition: all 1s;
+  }
+  
+  .card:nth-child(1):hover,
+  .card:nth-child(2):hover,
+  .card:nth-child(3):hover,
+  .card:nth-child(4):hover,
+  .card:nth-child(5):hover,
+  .card:nth-child(6):hover,{
+    transform: scale(1.1);
+  }
