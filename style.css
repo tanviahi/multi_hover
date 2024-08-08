@@ -12,7 +12,7 @@
     height: 100vh;
     width: 100vw;
     color: black;
-    background-image: url(duddle.jpg);
+    background-image: url(back.jpg);
     background-repeat: repeat;
     /* filter: blur(1); */
     padding-top: 0.1px;
@@ -26,14 +26,16 @@
   .container {
     height: 500px;
     width: 650px;
-    border: 1px solid black;
+    border: 1px solid rgba(163, 188, 192, 0.11);
     margin: 30px auto 0; /* (t, r, b, l) */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+   background-image: url(css.jpg);
+   background-size: contain;
     border-radius: 36px;
+    
   }
   
   .card {
@@ -49,6 +51,7 @@
   .card:nth-child(1) {
     background-image: url(one.jpg);
     background-size: cover;
+    transform: rotate(-5deg);
     }
 
   .card:nth-child(1):hover{
@@ -63,6 +66,7 @@
     background-image: url(four.webp);
     background-size: cover;
     transform: scale(1.1);
+    transform: rotate(-4deg);
   }
   .card:nth-child(2):hover{
     background-image: url(four.webp);
@@ -77,6 +81,7 @@
     background-image: url(three.avif);
     background-size: cover;
     transform: scale(1.1);  
+    transform: rotate(-2deg);
 }
 .card:nth-child(3):hover{
     background-image: url(three.avif);
@@ -90,6 +95,7 @@
     background-image: url(five.jpg);
     background-size: cover;
     transform: scale(1.1);  
+    transform: rotate(-1deg);
 }
 .card:nth-child(4):hover{
     background-image: url(five.jpg);
@@ -103,7 +109,8 @@
     background-image: url(last.webp);
     background-size: cover;
     background-position: center;
-    transform: scale(1.1);  
+    transform: scale(1.1); 
+    transform: rotate(1deg); 
 }
 .card:nth-child(5):hover{
     background-image: url(last.webp);
@@ -119,6 +126,7 @@
     background-size: cover;
     background-position: center;
     transform: scale(1.1);  
+    transform: rotate(3deg);
 }
 .card:nth-child(6):hover{
     background-image: url(abc.jpg);
@@ -129,13 +137,32 @@
     align-items: center;
     border-radius: 30px;
   }
+  .card:nth-child(7) {
+    background-image: url(shah.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);  
+    transform: rotate(4deg);
+}
+.card:nth-child(7):hover{
+    background-image: url(shah.jpg);
+    transform: scale(1.1);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    border-radius: 30px;
+  }
+
 
   .card:nth-child(1),
   .card:nth-child(2),
   .card:nth-child(3),
   .card:nth-child(4),
   .card:nth-child(5),
-  .card:nth-child(6) {
+  .card:nth-child(6),
+  .card:nth-child(7) {
     cursor: pointer;
     transition: all 1s;
   }
@@ -145,6 +172,7 @@
   .card:nth-child(3):hover,
   .card:nth-child(4):hover,
   .card:nth-child(5):hover,
-  .card:nth-child(6):hover,{
+  .card:nth-child(6):hover,
+  .card:nth-child(7):hover{
     transform: scale(1.1);
   }
